@@ -148,8 +148,8 @@
     </header>
     <nav>
         <a href="#inicio">Inicio</a>
-        <a href="#producto">Producto</a>
-        <a href="#galeria">Galería</a>
+        <a href="#producto a vender">Producto a vender</a>
+        <a href="#fotos del rptotipo">fotos del prototipo</a>
         <a href="#privacidad">Aviso de Privacidad</a>
         <a href="#contacto">Contacto</a>
     </nav>
@@ -157,7 +157,7 @@
         <h2>Bienvenidos</h2>
         <p><strong>MediBox</strong> es un proyecto social y ecológico enfocado en ayudar a personas con dificultad para abrir envases de medicamentos, además de fomentar el reciclaje de estos contenedores. Buscamos unir la accesibilidad y la sostenibilidad en un solo propósito: mejorar vidas mientras protegemos el planeta.</p>
     </section>
-    <section id="producto">
+    <section id="producto a vender">
         <h2>Nuestro Dispositivo Automatizado</h2>
         <p>
         Nuestro dispositivo automatizado está diseñado para personas con movilidad reducida y centros médicos. Facilita la apertura de medicamentos y fomenta el reciclaje de envases farmacéuticos.
@@ -177,7 +177,7 @@
             </li>
         </ul>
     </section>
-    <section id="galeria">
+    <section id="fotos del prototipo">
         <h2>Galería del Proyecto</h2>
         <p>Conoce algunas imágenes representativas de nuestro trabajo y desarrollo sostenible:</p>
         <div class="galeria">
@@ -233,4 +233,18 @@
         <p>© 2025 MediBox | Proyecto ecológico y social | <a href="#privacidad">Aviso de Privacidad</a></p>
     </footer>
 
-    <div id="cookie-banner
+    <div id="cookie-banner">
+        Utilizamos cookies para mejorar tu experiencia. Al continuar, aceptas nuestro Aviso de Privacidad.
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookiesAceptadas')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+        function aceptarCookies() {
+            localStorage.setItem('cookiesAceptadas', true);
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
+</body>
+
