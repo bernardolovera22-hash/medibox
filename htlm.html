@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBox | Tecnología útil y ecológica</title>
+    <link rel="icon" href="" type="image/png">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            background: #f3f1f8;
+            color: #2b2b2b;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #5a189a, #7b2cbf);
+            color: #fff;
+            text-align: center;
+            padding: 3rem 1rem 4rem 1rem;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 10%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.3rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.1rem;
+        }
+        nav {
+            background: #e7dcf9;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5a189a;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #7b2cbf;
+        }
+        section {
+            max-width: 1000px;
+            background: #ffffff;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #5a189a;
+            border-left: 6px solid #c8a2e0;
+            padding-left: 10px;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+        /* Galería */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 1.5rem;
+        }
+        .galeria img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+        form input, form textarea {
+            width: 100%;
+            margin: 8px 0;
+            padding: 10px;
+            border: 1px solid #bda1e1;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+        }
+        button {
+            background: #5a189a;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #7b2cbf;
+        }
+        footer {
+            background: #5a189a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #c8a2e0;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #5a189a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            display: none;
+        }
+        #cookie-banner button {
+            background: #c8a2e0;
+            color: #333;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MediBox</h1>
+        <p>Tecnología accesible que facilita y cuida el medio ambiente</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#producto">Producto</a>
+        <a href="#galeria">Galería</a>
+        <a href="#privacidad">Aviso de Privacidad</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p><strong>MediBox</strong> es un proyecto social y ecológico enfocado en ayudar a personas con dificultad para abrir envases de medicamentos, además de fomentar el reciclaje de estos contenedores. Buscamos unir la accesibilidad y la sostenibilidad en un solo propósito: mejorar vidas mientras protegemos el planeta.</p>
+    </section>
+    <section id="producto">
+        <h2>Nuestro Dispositivo Automatizado</h2>
+        <p>
+        Nuestro dispositivo automatizado está diseñado para personas con movilidad reducida y centros médicos. Facilita la apertura de medicamentos y fomenta el reciclaje de envases farmacéuticos.
+        </p>
+        <p>
+        Es un <strong>dispositivo automatizado</strong>, diseñado para que personas con enfermedades como artritis puedan abrir fácilmente envases de medicamentos, sin esfuerzo físico y con total seguridad. El equipo también cuenta con un sistema de clasificación ecológica, que separa tapas y envases vacíos para enviarlos a centros de reciclaje especializados.
+        </p>
+        <ul>
+            <li><strong>Diseño:</strong> Módulo vertical compacto (aprox. 1.2 m de altura), tipo estación asistida.</li>
+            <li><strong>Material:</strong> Fabricado con materiales de metal ligero.</li>
+            <li><strong>Precio Estimado:</strong> entre $3,500 y $5,000 MXN por unidad.</li>
+            <li><strong>Uso y Seguridad:</strong>
+                <ul>
+                    <li>El usuario coloca el envase, el sistema lo sujeta y abre automáticamente.</li>
+                    <li>Separación automática de residuos (tapas/envases).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="galeria">
+        <h2>Galería del Proyecto</h2>
+        <p>Conoce algunas imágenes representativas de nuestro trabajo y desarrollo sostenible:</p>
+        <div class="galeria">
+            <img src="img/dispositivo1.jpg" alt="Dispositivo ecológico Mano-Amiga">
+            <img src="img/dispositivo2.jpg" alt="Punto de reciclaje LiberaMed">
+            <img src="img/dispositivo3.jpg" alt="Uso del dispositivo Ecomano">
+            <img src="img/instalacion_hospital.jpg" alt="Instalación en hospital">
+            <img src="img/reciclaje_envases.jpg" alt="Reciclaje de envases médicos">
+            <img src="img/equipo_trabajo.jpg" alt="Equipo Mano-Amiga colaborando">
+        </div>
+    </section>
+    <section id="privacidad">
+        <h2>Aviso de Privacidad</h2>
+        <p><strong>Última actualización:</strong> 20 de octubre de 2025</p>
+        <h3>1. Responsable</h3>
+        <p><strong>MediBox</strong> es responsable del uso y protección de sus datos personales.</p>
+        <p><strong>Domicilio:</strong> CBT Lic. Mario Colín Sánchez, Atlacomulco, Estado de México.</p>
+        <p><strong>Correo:</strong> <a href="mailto:medibox.contacto@gmail.com">medibox.contacto@gmail.com</a></p>
+        <h3>2. Datos que recabamos</h3>
+        <ul>
+            <li>Nombre completo</li>
+            <li>Correo electrónico</li>
+            <li>Teléfono</li>
+            <li>Dirección o ubicación (si aplica)</li>
+            <li>Preferencias sobre instalación o tipo de servicio</li>
+        </ul>
+        <h3>3. Finalidades</h3>
+        <ul>
+            <li>Responder consultas o solicitudes de información.</li>
+            <li>Coordinar instalaciones y servicios de reciclaje.</li>
+            <li>Emitir comprobantes o facturas.</li>
+            <li>Informar sobre campañas ecológicas o actualizaciones del proyecto.</li>
+        </ul>
+        <h3>4. Seguridad</h3>
+        <p>Utilizamos medidas técnicas y administrativas para resguardar la información, como contraseñas seguras, encriptación, y acceso limitado al personal autorizado.</p>
+        <h3>5. Derechos ARCO</h3>
+        <p>Puede solicitar el acceso, rectificación, cancelación u oposición de sus datos escribiendo a <a href="mailto:privacidad@medibox.mx">privacidad@medibox.mx</a>. La respuesta se otorgará dentro de los 20 días hábiles posteriores a su solicitud.</p>
+        <h3>6. Cookies</h3>
+        <p>Este sitio utiliza cookies para mejorar la experiencia de navegación. Puede aceptar o rechazar su uso desde el banner inferior.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Quieres hacer tu pedido o colaborar con nosotros? 😊 Escríbenos:</p>
+        <form>
+            <label>Nombre:</label><input type="text" required>
+            <label>Correo electrónico:</label><input type="email" required>
+            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <label><input type="checkbox" required> He leído y acepto el <a href="#privacidad">Aviso de Privacidad</a>.</label><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 MediBox | Proyecto ecológico y social | <a href="#privacidad">Aviso de Privacidad</a></p>
+    </footer>
+    <div id="cookie-banner
