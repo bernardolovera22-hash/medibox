@@ -25,120 +25,142 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     }
         header h1 {
-            font-size: 2.6rem;
-            margin-bottom: 0.3rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.1rem;
+      font-size: 3rem;
+      margin-bottom: 0.4rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-top: 0;
         }
         nav {
-            background: #e7dcf9;
-            text-align: center;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #5a189a;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #7b2cbf;
-        }
-        section {
-            max-width: 1000px;
-            background: #ffffff;
-            margin: 2rem auto;
-            padding: 2rem;
-            border-radius: 14px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #5a189a;
-            border-left: 6px solid #c8a2e0;
-            padding-left: 10px;
-        }
+      background: #caf0f8;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #003049;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: color 0.3s ease, transform 0.2s;
+    }
+
+    nav a:hover {
+      color: #0077b6;
+      transform: scale(1.1);
+    }
+       section {
+      max-width: 1000px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0077b6;
+      border-left: 6px solid #90e0ef;
+      padding-left: 10px;
+    }
         ul {
             margin-left: 1.5rem;
         }
         /* Galería */
         .galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 16px;
-            margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 1.5rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+         form input, form textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ade8f4;
+      border-radius: 8px;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    button {
+      background: #0077b6;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #023e8a;
         }
-        .galeria img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .galeria img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-        }
-        form input, form textarea {
-            width: 100%;
-            margin: 8px 0;
-            padding: 10px;
-            border: 1px solid #bda1e1;
-            border-radius: 8px;
-            font-family: 'Nunito', sans-serif;
-        }
-        button {
-            background: #5a189a;
-            color: white;
-            padding: 10px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background: #7b2cbf;
-        }
-        footer {
-            background: #5a189a;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #c8a2e0;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        #cookie-banner {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #5a189a;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            display: none;
-        }
-        #cookie-banner button {
-            background: #c8a2e0;
-            color: #333;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
+         footer {
+      background: #001f54;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #90e0ef;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+       #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      display: none;
+    }
+
+    #cookie-banner button {
+      background: #90e0ef;
+      color: #003049;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    #cookie-banner button:hover {
+      background: #ade8f4;
+    }
     </style>
 </head>
 <body>
@@ -154,7 +176,7 @@
         <a href="#contacto">Contacto</a>
     </nav>
     <section id="inicio">
-        <h2>holaaaa</h2>
+        <h2>hola bienbenidos a MediBox</h2>
         <p><strong>MediBox</strong> es un proyecto social y ecológico enfocado en ayudar a personas con dificultad para abrir envases de medicamentos, además de fomentar el reciclaje de estos contenedores. Buscamos unir la accesibilidad y la sostenibilidad en un solo propósito: mejorar vidas mientras protegemos el planeta.</p>
     </section>
     <section id="producto a vender">
@@ -247,6 +269,7 @@
         }
     </script>
 </body>
+
 
 
 
